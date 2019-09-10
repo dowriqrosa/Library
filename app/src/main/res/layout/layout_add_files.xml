@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ProgressBar
+            android:id="@+id/progressBarNewF"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/uploadFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btAddFile"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+        <!--<TextView
+            android:id="@+id/fileLocal"
+            android:layout_width="207dp"
+            android:layout_height="36dp"
+            android:text="Local do arquivo" />-->
+
+        <EditText
+            android:id="@+id/fileLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Link do arquivo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/nameFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome do Documento"
+            android:inputType="textPersonName" />
+
+        <RadioGroup
+            android:id="@+id/classificacao"
+            android:layout_width="295dp"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Social" />
+
+            <RadioButton
+                android:id="@+id/fisica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fisica" />
+
+            <RadioButton
+                android:id="@+id/mental"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mental" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cor_botao"
+            android:onClick="btSalvar"
+            android:text="Enviar" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

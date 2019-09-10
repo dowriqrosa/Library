@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/fisica"
+            android:icon="@drawable/fisica"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/mental"
+            android:icon="@drawable/mental"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/social"
+            android:icon="@drawable/social"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/listAdmin"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Admin" />
+    </group>
+
+    <item android:title="Usuario">
+        <menu>
+            <item
+                android:id="@+id/trocaUsuario"
+                android:icon="@drawable/troca"
+                android:title="Trocar de usuario" />
+        </menu>
+    </item>
+
+</menu>
